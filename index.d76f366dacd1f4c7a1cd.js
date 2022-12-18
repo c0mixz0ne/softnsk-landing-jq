@@ -13811,12 +13811,9 @@ menuItems.forEach(function (menuItem) {
   });
 });
 //Custom Scrollbar
-var userAgent = navigator.userAgent;
-if (userAgent.match(/firefox|fxios/i)) {
-  $(".form__select-list").mCustomScrollbar({
-    theme: "3d-thick-dark"
-  });
-}
+$(".form__select-list").mCustomScrollbar({
+  theme: "3d-thick-dark"
+});
 })();
 
 /******/ })()
