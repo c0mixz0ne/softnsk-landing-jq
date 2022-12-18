@@ -1,0 +1,60 @@
+.burger{
+    display: none;
+    position: relative;
+    background-color: transparent;
+    border: none;
+    width: 30px;
+    height: 25px;
+    overflow: hidden;
+    &__line{
+        transition: $transition;
+        &:nth-child(1){
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: block;
+            width: 30px;
+            height: 4px;
+            background: #fff;
+        }
+        &:nth-child(2){
+            position: absolute;
+            top: 10px;
+            left: 0;
+            display: block;
+            width: 30px;
+            height: 4px;
+            background: $blueLogo;
+
+        }
+        &:nth-child(3){
+            position: absolute;
+            top: 20px;
+            left: 0;
+            display: block;
+            width: 30px;
+            height: 4px;
+            background: #fff;
+        }
+    }
+    &_open{
+        width: 30px;
+        height: 25px;
+    }
+    &_open &__line{
+        &:nth-child(1){
+            transform: rotate(45deg);
+            width: 30px;
+            top: 11px;
+        }
+        &:nth-child(2){
+            transform: rotate(-45deg);
+            width: 30px;
+            top: 11px;
+        }
+
+        &:nth-child(3){
+            top:40px;
+        }
+    }
+}

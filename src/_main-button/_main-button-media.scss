@@ -1,0 +1,13 @@
+@media screen and (max-width: $xxl) {
+}
+@media screen and (max-width: $xl) {
+}
+@media screen and (max-width: $md) {
+}
+@media screen and (max-width: $sm) {
+    .main-button{
+        &_order-modification{
+            margin-bottom: 55px;
+        }
+    }
+}

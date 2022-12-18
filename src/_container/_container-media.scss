@@ -1,0 +1,28 @@
+@media screen and (max-width: $xxl) {
+}
+@media screen and (max-width: $xl) {
+  .container{
+    &_about{
+      padding-top: 140px;
+      padding-bottom: 70px;
+    }
+    &_order{
+      padding-top: 60px;
+    }
+    &_footer{
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
+@media screen and (max-width: $md) {
+}
+@media screen and (max-width: $sm) {
+  .container{
+    &_about{
+      padding-top: 120px;
+      padding-bottom: 70px;
+    }
+  }
+}
+

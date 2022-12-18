@@ -1,0 +1,265 @@
+.form{
+    margin-top: 43px;
+    &__data-wrapper{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        &_range{
+            justify-content: space-between;
+            flex-wrap: nowrap;
+        }
+    }
+    &__input{
+        width:100%;
+        max-width: 370px;
+        min-width: 300px;
+        font-weight: 400;
+        text-align: left;
+        font-family: Lato, Arial, Helvetica, sans-serif;
+        position: relative;
+        display: block;
+        font-size: 18px;
+        line-height: 22px;
+        color: $formTextColor;
+        border-radius: 3px;
+        border:1px solid $white;
+        background: $inputBgColor;
+        padding:12px 10px;
+        margin-top: 43px;
+        &::placeholder{
+            color:$formTextColor
+        }
+        &:focus{
+            @include focus;
+        }
+    }
+    &__input:not(:last-child){
+        margin-right: 30px;
+    }
+    &__select{
+        width:100%;
+        margin-right: 30px;
+        max-width: 370px;
+        min-width: 300px;
+        margin-top: 43px;
+        position: relative;
+    }
+    &__select-button{
+        width: 100%;
+        font-weight: 400;
+        text-align: left;
+        font-family: Lato, Arial, Helvetica, sans-serif;
+        position: relative;
+        display: block;
+        font-size: 18px;
+        line-height: 22px;
+        color: $formTextColor;
+        border-radius: 3px;
+        border:1px solid $white;
+        background: $inputBgColor;
+        cursor: pointer;
+        padding:12px 10px;
+        padding-right: 50px;
+        position: relative;
+        &:after{
+            content: "";
+            background-image: url(images/chevron-icon.svg);
+            position: absolute;
+            width:9px;
+            height:6px;
+            background-repeat: no-repeat;
+            top: 50%;
+            right: 15px;
+            transform: translateY(-50%);
+            pointer-events: none;
+        }
+        &_open{
+            color:$white;
+            background: $footerBgColor85;
+            border:1px solid $footerBgColor;
+            border-bottom: none;
+            border-bottom-right-radius:0;
+            border-bottom-left-radius:0;
+            &:after{
+                background-image: url(images/white-chevron-icon.svg);
+            }
+        }
+        &:focus{
+            @include focus;
+        }
+    }
+    &__select-dropdown{
+        margin: 0;
+        padding: 0;
+        width:100%;
+        display: none;
+        &_open{
+            display: block;
+        }
+    }
+    &__select-list{
+        background-color: $formTextColor;
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        max-width: 370px;
+        width:100%;
+        max-height: 180px;
+        overflow:auto;
+        border:1px solid $footerBgColor;
+        border-top:none;
+        border-bottom-right-radius:3px;
+        border-bottom-left-radius:3px;
+        position: absolute;
+        left:0;
+        top:47px;
+        z-index: 10;
+        scrollbar-color:$blue $footerBgColor;
+        scrollbar-width: thin;
+        &::-webkit-scrollbar {
+            width: 13px;
+        }
+        &::-webkit-scrollbar-track {
+            background: $footerBgColor;
+            border:3px solid $formTextColor;
+            border-radius: 8px;
+        }
+        &::-webkit-scrollbar-thumb {
+            border-radius: 8px;
+            background: $blue;
+            border:3px solid transparent;
+            background-clip: content-box;
+            transition: $transition;
+        }
+        &::-webkit-scrollbar-thumb:hover {
+            border-radius: 8px;
+            background: $darkBlue;
+            border:3px solid transparent;
+            background-clip: content-box;
+            transition: $transition;
+        }
+    }
+    &__select-item{
+        color: $white;
+        font-weight: 400;
+        text-align: left;
+        padding-left: 10px;
+        padding-top: 12px;
+        padding-bottom: 0px;
+        font-family: Lato, Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        transition: $transition;
+        cursor:pointer;
+    }
+    &__select-item:hover{
+        color:$blueLogo
+    }
+    &__range-input{
+        margin-top: 18px;
+        width: 100%;
+        -webkit-appearance: none;
+        border-radius: 50px;
+        background: $rangeBgColor;
+        height:8px;
+        &:focus{
+            outline: none;
+        }
+        &::-webkit-slider-runnable-track {
+            width: 100%;
+            height: 8px;
+            cursor: pointer;
+            border-radius: 50px;
+            border: 1px solid $white;
+        }
+        &::-moz-range-track {
+            width: 100%;
+            height: 8px;
+            cursor: pointer;
+            border-radius: 50px;
+            border: 1px solid $white;
+        }
+        &::-moz-range-thumb {
+            border: 3px solid $darkBlue;
+            height: 22px;
+            width: 22px;
+            border-radius: 50%;
+            background: $blueLogo;
+            cursor: pointer;
+            -webkit-appearance: none;
+            margin-top: -11px;
+            transition: $transition;
+        }
+        &::-moz-range-thumb:hover{
+            background: $darkBlue;
+            border: 3px solid $blueLogo;
+        }
+        &::-webkit-slider-thumb {
+            border: 3px solid $darkBlue;
+            height: 27px;
+            width: 27px;
+            border-radius: 50%;
+            background: $blueLogo;
+            cursor: pointer;
+            -webkit-appearance: none;
+            margin-top: -11px;
+            transition: $transition;
+          }
+          &::-webkit-slider-thumb:hover{
+            background: $darkBlue;
+            border: 3px solid $blueLogo;
+          }
+    }
+    &__range-title-wrapper{
+        margin-top: 31px;
+        color:$white;
+        font-family: Lato, Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        line-height: 22px;
+        display: flex;
+        justify-content:space-between
+    }
+    &__range-slider{
+        width:100%;
+        max-width: 769px;
+        margin-right: 26px;
+    }
+    &__file-text{
+        margin-right: -26px;
+    }
+    &__file{
+        width:100%;
+        max-width: 373px;
+        font-family: Lato, Arial, Helvetica, sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 18px;
+        color:$formTextColor;
+        background: $white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-height: 48px;
+        margin-top: 30px;
+        text-transform: uppercase;
+        cursor: pointer;
+        border-radius: 3px;
+        border:2px solid $blue;
+        transition: $transition;
+        position: relative;
+        &:before{
+            content:"";
+            position: absolute;
+            width:18px;
+            height:21px;
+            margin-left: -164px;
+            top: 12px;
+            background: url(images/add-file-icon.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+    }
+    &__file-add{
+        display: none;
+    }
+}

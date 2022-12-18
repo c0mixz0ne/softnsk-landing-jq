@@ -1,0 +1,21 @@
+@media screen and (max-width: $xxl) {
+}
+@media screen and (max-width: $xl) {
+    .main-text{
+        &_about{
+            max-width: 480px;
+        }
+    }
+}
+@media screen and (max-width: $md) {
+}
+@media screen and (max-width: $sm) {
+    .main-text{
+        &_about{
+            font-size: 25px;
+            line-height: 40px;
+            margin-bottom: 35px;
+            max-width: 250px;
+        }
+    }
+}

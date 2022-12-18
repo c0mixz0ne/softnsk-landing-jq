@@ -1,0 +1,30 @@
+.navigation{
+    font-style: normal;
+    font-weight: 400;
+    font-family: Lato, Arial, Helvetica, sans-serif;
+    &__item:not(:last-child){
+        margin-right: 60.5px;
+    }
+    &__list{
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+    }
+    &__link{
+        color: $white;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: $transition;
+        font-size: 13px;
+        line-height: 16px;
+    }
+    &__link:hover{
+        color:$navBlue;
+    }
+    &__link:focus{
+        @include focus;
+    }
+    &__link_active{
+        color:$navBlue;
+    }
+}

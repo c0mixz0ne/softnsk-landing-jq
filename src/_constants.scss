@@ -1,0 +1,50 @@
+// Colors
+$white: rgba(255, 255, 255, 1);
+$gray: rgba(196, 196, 196, 1);
+$blue: rgba(62, 156, 220, 1);
+$black:rgba(0, 0, 0, 1);
+$navBlue:rgba(67, 171, 240, 1);
+$blueLogo: rgba(66, 169, 237, 1);
+$darkBlue: rgba(40, 102, 144, 1);
+$headerBgColor: rgba(16, 16, 29, 0.9);
+$footerBgColor: rgba(61, 64, 80, 1);
+$footerBgColor85: rgba(61, 64, 80, .85);
+$inputBgColor: rgba(255, 255, 255, 0.85);
+$grayBorder:rgba(111, 109, 123, 1);
+$whiteThemeButtonColor:rgba(42, 43, 48, 1);
+$grayColorAboutSubtitle:rgba(187, 187, 187, 1);
+$footerMoneyColor:rgba(195, 195, 195, 1);
+$formTextColor:rgba(39, 39, 51, 1);
+$rangeBgColor:rgba(255,255,255, .7);
+
+//Settings
+$transition: .5s ease;
+
+//BreakPoints
+$xxl:1200px;
+$xl:992px;
+$md:768px;
+$sm:576px;
+
+//RetinaMedia
+$pixelRatio:2;
+$minResDpi:192dpi;
+$minResDppx:2dppx;
+
+//Focus
+@mixin focus{
+    outline:$navBlue dotted thick;
+}
+
+//Animations
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, -100%, 0)
+    }
+
+    to {
+        opacity: 1;
+        transform: translateZ(0)
+    }
+}

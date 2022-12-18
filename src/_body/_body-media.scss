@@ -1,0 +1,23 @@
+//Retina
+@media only screen and (-webkit-min-device-pixel-ratio: $pixelRatio),
+  /* для Safari,
+  Safari IOS */ only screen and (min-resolution: $minResDpi),
+  /* для IE 10,
+  IE 11,
+  Opera Mini */ only screen and (min-resolution: $minResDppx) {
+  .about {
+    background-image: url(../src/images/bg1-2x.jpg);
+  }
+  .order {
+    background-image: url(../src/images/bg2-2x.jpg);
+  }
+}
+
+@media screen and (max-width: $xxl) {
+}
+@media screen and (max-width: $xl) {
+}
+@media screen and (max-width: $md) {
+}
+@media screen and (max-width: $sm) {
+}

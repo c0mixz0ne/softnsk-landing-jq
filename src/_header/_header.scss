@@ -1,0 +1,15 @@
+.header{
+    background-color: $headerBgColor;
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    padding: 33.5px 0;
+    color: $white;
+    z-index: 100;
+    &_animation{
+        animation-fill-mode: both;
+        animation-duration: 1s;
+        animation-name: fadeInDown;
+    }
+}

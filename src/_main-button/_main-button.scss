@@ -1,0 +1,47 @@
+.main-button{
+    font-family: Lato, Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 22px;
+    padding:9.5px 0;
+    width:100%;
+    max-width: 183px;
+    cursor: pointer;
+    transition: $transition;
+    border-radius: 4px;
+    &_blue-theme{
+        background-color: $blue;
+        border: 1px solid $white;
+        color:$white
+    }
+    &_blue-theme:hover{
+        background-color: $white;
+        border: 1px solid $blue;
+        color:$blue
+    }
+    &_white-theme{
+        background-color: $white;
+        border: 1px solid $grayBorder;
+        color:$whiteThemeButtonColor;
+    }
+    &_white-theme:hover{
+        background-color: $grayBorder;
+        border: 1px solid $white ;
+        color:$white;
+    }
+    &_about-positon{
+        margin-right: 30px;
+    }
+    &_order-modification{
+        margin-top: 51px;
+        font-size: 15px;
+        padding: 12px 8px;
+        max-width: 370px;
+        margin-bottom: 150px;
+    }
+    &:focus{
+        @include focus;
+    }
+}

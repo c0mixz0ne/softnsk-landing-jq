@@ -1,0 +1,145 @@
+.footer{
+    font-family: Lato, Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    background-color: $footerBgColor;
+    padding:32px 0;
+    &__copy{
+        color:$white;
+        font-size: 13px;
+        line-height: 16px;
+        width:100%;
+        padding-left: 1px;
+    }
+    &__money{
+        color:$footerMoneyColor;
+        display: flex;
+        justify-content: space-between;
+        width:100%;
+        position: relative;
+        &::before{
+            content: "";
+            position: absolute;
+            width: 1px;
+            height: 18px;
+            background: url(images/vertical-icon.svg);
+            background-repeat: no-repeat;
+            left: -43px;
+            top: 0;
+        }
+        &::after{
+            content: "";
+            position: absolute;
+            width: 1px;
+            height: 18px;
+            background: url(images/vertical-icon.svg);
+            background-repeat: no-repeat;
+            right: -43px;
+            top: 0;
+        }
+    }
+    &__money-item{
+        font-size: 13px;
+        line-height: 16px;
+        width:100%;
+        color:$footerMoneyColor;
+        position: relative;
+        min-width: 120px;
+        display: flex;
+        justify-content: center;
+        &_qiwi{
+            margin-right: 13px;
+            margin-left: -9px;
+        }
+        &_yandex{
+            margin-left: -14px;
+        }
+        &_webmoney{
+            margin-right: -37px;
+        }
+        &_qiwi::after{
+            content: "";
+            position: absolute;
+            width: 21px;
+            height: 20px;
+            background: url(images/qiwi-icon.svg);
+            background-repeat: no-repeat;
+            left: 7px;
+            top: -2px;
+        }
+        &_yandex::after{
+            content: "";
+            position: absolute;
+            width: 15px;
+            height: 18px;
+            background: url(images/yandex-icon.svg);
+            background-repeat: no-repeat;
+            left: 2px;
+            top: -1px;
+        }
+        &_webmoney::after{
+            content: "";
+            position: absolute;
+            width: 15px;
+            height: 18px;
+            background: url(images/webmoney-icon.svg);
+            background-repeat: no-repeat;
+            left: 7px;
+            top: -2px;
+        }
+    }
+    &__contacts{
+        color:$white;
+        display: flex;
+        justify-content: space-around;
+        width:100%;
+        font-size: 13px;
+        line-height: 16px;
+    }
+    &__contacts-email{
+        color:$white;
+        text-decoration: none;
+        position: relative;
+        margin-left: 70px;
+        transition: $transition;
+        &:hover{
+            color:$blue;
+        }
+        &:focus{
+            @include focus;
+        }
+        &::before{
+            content: "";
+            position: absolute;
+            width: 16px;
+            height: 13px;
+            background: url(images/mail-footer-icon.svg);
+            background-repeat: no-repeat;
+            left: -29px;
+            top: 2px;
+        }
+    }
+    &__contacts-vk{
+        position: relative;
+        color:$white;
+        text-decoration: none;
+        margin-right: -36px;
+        transition: $transition;
+        &:hover{
+            color:$blue;
+        }
+        &:focus{
+            @include focus;
+        }
+        &::before{
+            content: "";
+            position: absolute;
+            width: 16px;
+            height: 13px;
+            background: url(images/vk-icon.svg);
+            background-repeat: no-repeat;
+            left: -27px;
+            top: 1px;
+        }
+    }
+}

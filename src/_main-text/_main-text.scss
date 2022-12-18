@@ -1,0 +1,24 @@
+.main-text{
+    font-family: Lato, Arial, Helvetica, sans-serif;
+    font-style: normal;
+    text-transform: uppercase;
+    &__blue{
+        color:$blue;
+    }
+    &_about{
+        max-width: 780px;
+        margin-bottom: 88px;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 58px;
+        color: $black;
+    }
+    &_order{
+        color: $white;
+        text-align: center;
+        font-weight: 700;
+        font-size: 35px;
+        line-height: 43px;
+        word-spacing: 19px;
+    }
+}

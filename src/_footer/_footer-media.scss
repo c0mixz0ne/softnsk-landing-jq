@@ -1,0 +1,109 @@
+@media screen and (max-width: $xxl) {
+    .footer{
+        &__money{
+            &::before{
+                // display: none;
+                left: -5px;
+            }
+            &::after{
+                // display: none;
+                right: 18px;
+            }
+        }
+        &__money-item_qiwi{
+            margin-right: 0;
+            margin-left: -0;
+            min-width: 130px;
+            &::after{
+                top: -1px;
+            }
+        }
+        &__money-item_yandex{
+            margin-right: 0;
+            margin-left: -0;
+            min-width: 130px;
+            &::after{
+                top: -2px;
+            }
+        }
+        &__money-item_webmoney{
+            margin-right: 0;
+            margin-left: -0;
+            min-width: 130px;
+            &::after{
+                top: -1px;
+            }
+        }
+        &__contacts{
+            justify-content: space-evenly;
+        }
+        &__contacts-email{
+            margin-left: 0;
+        }
+        &__contacts-vk{
+            margin-right: 0;
+        }
+        &__copy{
+            display: flex;
+            justify-content: center;
+            padding-right: 10px;
+        }
+    }
+}
+@media screen and (max-width: $xl) {
+    .footer{
+        padding:15px 0;
+        &__money{
+            max-width: 500px;
+        }
+        &__copy, &__money, &__contacts{
+            padding: 10px 0;
+            text-align: center;
+        }
+        &__money{
+            align-items: center;
+            &::before{
+                // display: none;
+                top: -8px;
+                left: 50%;
+                height:18px;
+                transform: rotate(90deg);
+            }
+            &::after{
+                // display: none;
+                right: 50%;
+                height:18px;
+                transform: rotate(90deg);
+                top:30px
+            }
+        }
+        &__money-item_qiwi{
+            max-width: 130px;
+            margin-bottom: 10px;
+        }
+        &__money-item_yandex{
+            max-width: 130px;
+            margin-bottom: 10px;
+        }
+        &__money-item_webmoney{
+            max-width: 130px;
+            margin-bottom: 10px;
+        }
+    }
+}
+@media screen and (max-width: $md) {
+}
+@media screen and (max-width: $sm) {
+    .footer{
+        &__money{
+            flex-direction: column;
+            &::after{
+                top:80px
+            }
+        }
+        &__contacts{
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}

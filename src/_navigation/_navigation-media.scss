@@ -1,0 +1,34 @@
+@media screen and (max-width: $xxl) {
+}
+@media screen and (max-width: $xl) {
+  .navigation {
+    display: none;
+    &_open{
+        display: block;
+        position: absolute;
+        top:66px;
+        width:100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        left:0;
+        background: $headerBgColor
+    }
+  }
+}
+@media screen and (max-width: $md) {
+}
+@media screen and (max-width: $sm) {
+  .navigation{
+    justify-content: center;
+    &_open &__list{
+      flex-direction: column;
+      align-items: center;
+    }
+    &_open &__item{
+      margin-bottom: 20px;
+      margin-right: 0;
+      text-align: center;
+    }
+  }
+}

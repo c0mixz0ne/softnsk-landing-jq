@@ -1,0 +1,56 @@
+section.order
+    .container.container_order
+        h2.main-text.main-text_order Оформление #[span.main-text__blue Заказа]
+        p.order__subtitle Перед заполнением формы ознакомьтесь с нашей схемой работы!
+        .circles
+            .circles__item
+                .circles__item-icon
+                .circles__item-text Lorem ipsum dolorsit amet
+            .circles__item
+                .circles__item-icon
+                .circles__item-text Сonsecteturadipiscing elit
+            .circles__item
+                .circles__item-icon
+                .circles__item-text Sed do eiusmod tempor
+            .circles__item
+                .circles__item-icon
+                .circles__item-text Esse cillum dolore eu fugiat
+            .circles__item
+                .circles__item-icon
+                .circles__item-text Excepteur sint occaecat cupidatat non proident
+        form.form(method="post", action="#")
+            .form__data-wrapper
+                .form__select
+                    button.form__select-button Выберите тип системы
+                    .form__select-dropdown
+                      ul.form__select-list
+                        li.form__select-item(data-value="type1") Sed ut perspiciatis
+                        li.form__select-item(data-value="type2") Nemo enim ipsam
+                        li.form__select-item(data-value="type3") Et harum quidem
+                        li.form__select-item(data-value="type4") Temporibus autem
+                        li.form__select-item(data-value="type5") Itaque earum rerum
+                        li.form__select-item(data-value="type6") Sed ut perspiciatis
+                        li.form__select-item(data-value="type7") Nemo enim ipsam
+                        li.form__select-item(data-value="type8") Et harum quidem
+                        li.form__select-item(data-value="type9") Temporibus autem
+                        li.form__select-item(data-value="type10") Itaque earum rerum
+                        li.form__select-item(data-value="type11") Sed ut perspiciatis
+                        li.form__select-item(data-value="type12") Nemo enim ipsam
+                        li.form__select-item(data-value="type13") Et harum quidem
+                        li.form__select-item(data-value="type14") Temporibus autem
+                    input(type='hidden', name='select', value='default/unselected')
+                input.form__input(name="email", type="text", placeholder="Ваш e-mail", required)
+                input.form__input(name="name", type="text", placeholder="Ваше имя", required)
+            .form__data-wrapper.form__data-wrapper_range
+                .form__range-slider
+                    .form__range-title-wrapper
+                        span.form__range-title Sed ut perspiciatis, unde omnis iste natus
+                        span.form__range-value 75 %
+                    input.form__range-input(type="range", name='range', min="0", max="100", value="75")
+                    //- input(type='hidden', name='range', value='default/unselected')
+                label.form__file
+                    span.form__file-text Прикрепить файл
+                    input(type='file', name="file").form__file-add
+            .form__data-wrapper
+                button.main-button.main-button_blue-theme.main-button_order-modification(type="submit") Отправить
+

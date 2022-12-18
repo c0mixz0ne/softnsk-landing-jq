@@ -1,0 +1,47 @@
+@media screen and (max-width: $xxl) {
+}
+@media screen and (max-width: $xl) {
+    .form{
+        &__data-wrapper{
+            flex-direction: column;
+            align-items: center;
+        }
+        &__select{
+            max-width: 500px;
+            margin-right: 0;
+        }
+        &__input{
+            max-width: 500px;
+            margin-right: 0;
+            &:not(:last-child){
+                margin-right: 0;
+            }
+        }
+        &__select-list{
+            max-width: 500px;
+        }
+        &__range-slider{
+            max-width: 500px;
+            margin-right: 0;
+        }
+        &__file{
+            height: 48px;
+            max-width: 500px;
+        }
+    }
+}
+@media screen and (max-width: $md) {
+}
+@media screen and (max-width: $sm) {
+    .form{
+        &__select,&__input{
+            min-width: unset;
+        }
+        &__range-value{
+            min-width: 55px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
