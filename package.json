@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "webpack template",
   "main": "index.js",
-  "homepage": "https://c0mixz0ne.github.io/softnsk",
+  "homepage": "https://c0mixz0ne.github.io/softnsk-landing-jq",
   "scripts": {
     "dev": "webpack --mode development",
     "build": "webpack --mode production",
